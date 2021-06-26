@@ -1,20 +1,19 @@
-# BITCOIN WALLET
+# NEWBULL WALLET
 
-Welcome to _Bitcoin Wallet_, a standalone NewBull payment app for your Android device!
+Welcome to NewBull Wallet\_, a standalone NewBull payment app for your Android device!
 
 This project contains several sub-projects:
 
- * __wallet__:
-     The Android app itself. This is probably what you're searching for.
- * __market__:
-     App description and promo material for the Google Play app store.
- * __integration-android__:
-     A tiny library for integrating NewBull payments into your own Android app
-     (e.g. donations, in-app purchases).
- * __sample-integration-android__:
-     A minimal example app to demonstrate integration of NewBull payments into
-     your Android app.
-
+-   **wallet**:
+    The Android app itself. This is probably what you're searching for.
+-   **market**:
+    App description and promo material for the Google Play app store.
+-   **integration-android**:
+    A tiny library for integrating NewBull payments into your own Android app
+    (e.g. donations, in-app purchases).
+-   **sample-integration-android**:
+    A minimal example app to demonstrate integration of NewBull payments into
+    your Android app.
 
 ### PREREQUISITES FOR BUILDING
 
@@ -32,9 +31,8 @@ and unpack it to `$ANDROID_HOME/`.
 Finally, the last preparative step is acquiring the source code. Again in your workspace, use:
 
     # first time only
-    git clone -b master https://github.com/bitcoin-wallet/bitcoin-wallet.git bitcoin-wallet
-    cd bitcoin-wallet
-
+    git clone -b master https://github.com/newbull/newbull-wallet.git newbull-wallet
+    cd newbull-wallet
 
 ### BUILDING
 
