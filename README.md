@@ -1,3 +1,5 @@
+If you want to help with translations, please send a Pull Request.
+
 # NEWBULL WALLET
 
 Welcome to NewBull Wallet\_, a standalone NewBull payment app for your Android device!
