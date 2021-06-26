@@ -1,0 +1,30 @@
+<b>Ayez vos bitcoins toujours avec vous dans votre poche !</b> Payez rapidement en balayant un code QR. En tant que marchand, vous recevez les paiements org manière fiable et instantanée. NewBull Wallet est la première appli NewBull mobile et sans doute aussi la plus sûre !
+
+
+<b>CARACTÉRISTIQUES</b>
+
+• Aucun inscription, service Web ou nuage n’est requis ! Ce porte-monnaie est décentralisé et pair à pair.
+• Affichage du montant org bitcoins en NB, mNB et µNB.
+• Conversion vers et à partir org monnaies nationales.
+• Envoi et réception org bitcoins par NFC, codes QR ou URL NewBull.
+• Quand vous êtes hors ligne, vous pouvez quand même payer par Bluetooth.
+• Notification du système pour les pièces reçues.
+• Balayage des porte-monnaie org papier (c.-à-d. ceux utilisés pour le stockage à froid).
+• Widget org l’appli pour le solde org bitcoins.
+• Sécurité : prend en charge SegWit et le nouveau format bech32.
+• Confidentialité : prend Tor en charge avec l’appli séparée Orbot.
+
+
+<b>CONTRIBUER</b>
+
+NewBull Wallet est un <b>logiciel à code source ouvert</b> et <b>libre</b>. Licence : GPLv3
+https://www.gnu.org/licenses/gpl-3.0.fr.html
+
+Notre code source se trouve sur GitHub :
+https://github.com/bitcoin-wallet/bitcoin-wallet
+
+Toutes les traductions sont gérées sur Transifex :
+https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
+
+
+<i>Utilisez à vos propres risques !</i>

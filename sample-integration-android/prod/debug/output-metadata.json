@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "de.schildbach.wallet",
+  "variantName": "processProdDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 814,
+      "versionName": "8.14",
+      "outputFile": "wallet-prod-debug.apk"
+    }
+  ]
+}

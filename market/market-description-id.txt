@@ -1,0 +1,17 @@
+Dengan aplikasi ini Anda selalu mempunyai NewBull dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). NewBull Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
+
+FITUR:
+
+• Tidak diperlukan server awan atau layanan web! Dompet ini benar-benar peer ke peer.
+• Tampilkan saldo dompet dalam NewBull dan mata uang lainnya.
+• Mengirim dan menerima NewBull via NFC, kode-QR atau Tautan NewBull.
+• Masukkan transaksi saat offline, akan dilaksanakan ketika online.
+• Notifikasi sistem untuk konektivitas NewBull dan menerima koin.
+• Widget Apl untuk saldo NewBull.
+
+Jika Anda ingin berkontribusi kepada NewBull Wallet, proyeknya berada di
+https://github.com/bitcoin-wallet/bitcoin-wallet
+
+Lisensi: GPLv3
+Gunakan dengan resiko Anda!
+http://www.gnu.org/licenses/gpl-3.0.en.html

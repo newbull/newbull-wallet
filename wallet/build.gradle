@@ -1,0 +1,142 @@
+plugins {
+    id 'com.android.application'
+    id 'androidsvgdrawable'
+}
+
+configurations {
+    all*.exclude group: 'com.google.android', module: 'android'
+    all*.exclude group: 'androidx.viewpager', module: 'viewpager'
+}
+
+dependencies {
+    implementation project(':integration-android')
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.core:core:1.5.0'
+    implementation 'androidx.fragment:fragment:1.3.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-service:2.3.1'
+    implementation 'androidx.sqlite:sqlite:2.1.0'
+    implementation "androidx.room:room-runtime:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
+//    implementation 'org.bitcoinj:bitcoinj-core:0.15.10'
+    implementation 'com.google.protobuf:protobuf-java:3.7.1'
+    implementation 'com.google.guava:guava:29.0-android'
+    implementation 'com.google.zxing:core:3.3.3'
+    //noinspection GradleDependency
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    //noinspection GradleDependency
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.9'
+    implementation 'com.squareup.moshi:moshi:1.9.3'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'com.github.tony19:logback-android:2.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation files('libs/newbullj-core-0.15.10.20210625.jar')
+    implementation 'org.bouncycastle:bcprov-jdk15to18:1.68'
+}
+
+ext {
+    archivesBaseName = 'newbull-wallet'
+}
+
+android {
+    compileSdkVersion 30
+//    buildToolsVersion 29
+
+    defaultConfig {
+        applicationId 'org.newbull'
+        dexOptions {
+            preDexLibraries false
+        }
+        minSdkVersion 19
+        targetSdkVersion 30
+    }
+
+    buildTypes {
+        all {
+            minifyEnabled true
+            shrinkResources false
+            proguardFile 'proguard.cfg'
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    flavorDimensions 'flavor'
+    productFlavors {
+        dev {
+            dimension 'flavor'
+            applicationIdSuffix '.wallet_test'
+        }
+        prod {
+            dimension 'flavor'
+            applicationIdSuffix '.wallet'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+        prod {
+            res.srcDirs = ['res-prod']
+            assets.srcDirs = ['assets-prod']
+        }
+        test {
+            java.srcDirs = ['test']
+            resources.srcDirs = ['test']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*.version'
+        exclude 'META-INF/proguard/**'
+        exclude 'META-INF/services/**'
+        exclude '**/*.proto'
+        exclude 'org/bouncycastle/x509/*.properties'
+        exclude 'okhttp3/internal/publicsuffix/*'
+        exclude 'org/bitcoinj/crypto/mnemonic/wordlist/english.txt'
+        exclude 'org/bitcoinj/crypto/cacerts'
+        exclude 'org.bitcoin.production.checkpoints.txt'
+        exclude 'org.bitcoin.test.checkpoints.txt'
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                outputFileName = "${archivesBaseName}-${variant.versionName}-${variant.name}.apk"
+            }
+    }
+}
+//
+//task svgToPngMipmap(type: fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask) {
+//    from = files('graphics/mipmap')
+//    to = file('res')
+//    targetedDensities = ['xxhdpi', 'xxxhdpi']
+//    outputFormat = 'PNG'
+//    outputType = 'mipmap'
+//}
+//
+//task svgToPngMipmapProd(type: fr.avianey.androidsvgdrawable.gradle.SvgDrawableTask) {
+//    from = files('graphics-prod/mipmap')
+//    to = file('res-prod')
+//    targetedDensities = ['xxhdpi', 'xxxhdpi']
+//    outputFormat = 'PNG'
+//    outputType = 'mipmap'
+//}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewBull Wallet</string>
+    <string name="app_name_short">NewBull</string>
+
+    <string-array name="preferences_block_explorer_values">
+        <item>https://explorer.newbull.org/m/</item>
+    </string-array>
+    <string-array name="preferences_block_explorer_labels">
+        <item>explorer.newbull.org</item>
+    </string-array>
+</resources>

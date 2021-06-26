@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "org.newbull.wallet",
+  "variantName": "processProdReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 814,
+      "versionName": "8.14.20210625",
+      "outputFile": "newbull-wallet-8.14.20210625-prodRelease.apk"
+    }
+  ]
+}

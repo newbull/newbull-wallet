@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+        google()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        //noinspection GradleDependency
+        classpath 'net.sf.proguard:proguard-gradle:6.0.3'
+        classpath('fr.avianey.androidsvgdrawable:gradle-plugin:3.0.2') {
+            exclude group: 'xerces'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}

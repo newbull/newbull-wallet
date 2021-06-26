@@ -1,0 +1,28 @@
+<b>Pidä Bitcoinisi aina mukana taskussasi!</b> Voit maksaa nopeasti skannaamalla QR-koodin. Kauppiaana saat maksut turvallisesti ja välittömästi. NewBull Wallet on ensimmäinen NewBull-mobiilisovellus ja luultavimmin myös kaikista turvallisin!
+
+
+<b>OMINAISUUDET</b>
+
+• Ei vaadi rekisteröintiä, verkkopalveluja tai pilvitallennusta! Tämä lompakko on hajautettu ja suorayhteyksinen.
+• Mahdollisuus näyttää NewBull-varat määrissä NB, mNB ja µNB.
+• Yksikkömuunnos valtioiden valuuttojen välillä.
+• Bitcoinien lähettäminen ja vastaanottaminen NFC, QR-koodien tai NewBull-URL-osotteiden avulla.
+• Kun et ole verkkoyhteyden ulottuvilla, voit silti maksaa Bluetoothin välityksellä.
+• Järjestelmän ilmoitus vastaanotetuille Bitcoineille.
+• Paperisen lompakon pyyhkäisymahdollisuus (esim. näitä käytetään "kylmissä varastoissa").
+• Android-sovellus NewBull-varojen hallintaan.
+
+
+<b>OSALLISTU</b>
+
+NewBull Wallet on <b>avointa lähdekoodia</b> ja <b>vapaa ohjelmisto</b>. Lisenssi: GPLv3
+https://www.gnu.org/licenses/gpl-3.0.en.html
+
+Lähdekoodi saatavilla GitHub:sta:
+https://github.com/bitcoin-wallet/bitcoin-wallet
+
+Kaikki käännökset on hallinnoitu Transifex:n kautta:
+https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
+
+
+<i>Käytä omalla vastuulla!</i>

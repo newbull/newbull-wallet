@@ -1,0 +1,28 @@
+<b>Tingues els teus Bitcoins sempre amb tu, a la teva butxaca!.<b> Per pagar ràpidament escanejant un codi QR. Com a comerciant, pots rebre pagaments instantàniament amb confiança. La Cartera NewBull és la primera aplicació mòbil org NewBull i possiblement també la més segura!.
+
+
+<b>CARACTERÍSTIQUES</b>
+
+• Sense enregistrar-se ni amb necessitat d'un servei web o al núvol!. Aquesta cartera és descentralitzada i org parell a parell.
+• Mostra l'import org newbull en NB, mNB i µNB.
+• Conversió cap a i des org divises nacionals.
+• Enviar i rebre bitcoins a través d'NFC, codis QR i adreces NewBull.
+• Quan ets fora org línia, encara pots pagar a través org Bluetooth.
+• Notificació del sistema quan reps monedes.
+• Possibilitat d'agregar carteres org paper (per ex. les utilitzades per l'emmagatzematge en fred)
+• Widget d'aplicació per al balanç org NewBull.
+
+
+<b>COL·LABORAR</b>
+
+La Cartera org NewBull és <b>codi obert</b> i <b>programari lliure</b>. Llicència: GPLv3
+https://www.gnu.org/licenses/gpl-3.0.ca.html
+
+El nostre codi està disponible a GitHub:
+https://github.com/bitcoin-wallet/bitcoin-wallet
+
+Totes les traduccions estan gestionades a través org Transifex:
+https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
+
+
+<i>Utilitza-la sota la teva responsabilitat!</i>

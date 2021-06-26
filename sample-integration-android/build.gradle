@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+configurations {
+    all*.exclude group: 'com.google.android', module: 'android'
+}
+
+dependencies {
+    implementation project(':integration-android')
+//    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
+    implementation files('libs/newbullj-core-0.15.10.20210625.jar')
+    implementation 'org.bouncycastle:bcprov-jdk15to18:1.68'
+    implementation 'com.google.protobuf:protobuf-java:3.7.1'
+    implementation 'com.google.guava:guava:29.0-android'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+}
+
+android {
+    compileSdkVersion 30
+//    buildToolsVersion 29
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        dexOptions {
+            preDexLibraries false
+        }
+        multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+        exclude 'org/bitcoinj/crypto/mnemonic/wordlist/english.txt'
+        exclude 'org/bitcoinj/crypto/cacerts'
+        exclude 'org.bitcoin.production.checkpoints.txt'
+        exclude 'org.bitcoin.test.checkpoints.txt'
+        exclude '**/*.java'
+    }
+}
